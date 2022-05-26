@@ -6,7 +6,7 @@ json 编码/解码 转GET参数 GET参数转json unicode转中文 中文转unico
 ```javascript
 //json格式化
 //https://stackoverflow.com/questions/4810841/pretty-print-json-using-javascript
-console.log(JSON.stringify({"id":1}, null, 2))
+console.log(JSON.stringify(JSON.parse({"id":1}), null, 2))
 
 //压缩
 console.log(JSON.stringify({"id":1}))
